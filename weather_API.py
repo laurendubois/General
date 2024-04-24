@@ -1,7 +1,7 @@
 import requests
 import pendulum
 
-# Set up the API request stuff, sometimes API wrappers can do some of this for you
+# Set up the API request stuff - API wrappers can do some of this for you
 url = 'https://api.met.no/weatherapi/locationforecast/2.0/compact'
 
 headers = {}
@@ -11,7 +11,7 @@ params = {}
 params['lat'] = 29.717101  # change this to your local lat
 params['lon'] = -95.404587  # change this to your local lon
 
-response = requests.get(url, headers=headers, params=params) # FYI this is simpilar to my API statement for WorldCat
+response = requests.get(url, headers=headers, params=params) # FYI this is similar to my API statement for WorldCat
 
 # Define the json output
 forecast = response.json()['properties']['timeseries'][0]
