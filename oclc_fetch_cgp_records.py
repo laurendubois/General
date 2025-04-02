@@ -36,7 +36,7 @@ my_590 = Field(
     subfields=[Subfield(code="a", value="Imported with PyCat.")]
 )
 
-# Read OCLC numbers
+# Read OCLC numbers from a gsheet
 gsheet = pd.read_csv(
     "https://docs.google.com/spreadsheets/d/1dDEJbAQzxUx0WyOR9_hw2uX07g4aWhTUl0-sczV1hZk/export?format=csv"
 )
